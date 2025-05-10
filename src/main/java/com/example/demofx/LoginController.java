@@ -26,7 +26,7 @@ public class LoginController {
     protected void onLoginButtonClick(ActionEvent event) {
 
         try {
-
+            // validar dados na API
             if (txtUsuario.getText().equals("admin") &&
                     txtSenha.getText().equals("admin")) {
 
