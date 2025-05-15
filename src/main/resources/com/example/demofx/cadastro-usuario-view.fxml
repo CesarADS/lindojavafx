@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="494.0" prefWidth="364.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demofx.CadastroUsuarioController">
+   <children>
+      <Label layoutX="71.0" layoutY="161.0" text="Login:" />
+      <TextField fx:id="txtUser" layoutX="71.0" layoutY="185.0" prefWidth="225.0" />
+      <Label layoutX="71.0" layoutY="224.0" text="Senha:" />
+      <PasswordField fx:id="txtSenha" layoutX="71.0" layoutY="248.0" prefHeight="25.0" prefWidth="225.0" />
+      <PasswordField fx:id="txtConfirmarSenha" layoutX="71.0" layoutY="317.0" prefHeight="25.0" prefWidth="225.0" />
+      <Label layoutX="71.0" layoutY="292.0" text="Confirmar senha:" />
+      <Button layoutX="121.0" layoutY="373.0" mnemonicParsing="false" onAction="#onCadastrarUsuario" prefHeight="47.0" prefWidth="124.0" text="Cadastrar" />
+      <Label layoutX="85.0" layoutY="32.0" text="Cadastro de usuário">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="91.0" text="ID do usuário:" />
+      <TextField fx:id="txtCodigo" disable="true" layoutX="69.0" layoutY="118.0" prefWidth="225.0" text="Auto" />
+      <Button layoutX="122.0" layoutY="433.0" mnemonicParsing="false" onAction="#onVoltarMenu" prefHeight="17.0" prefWidth="124.0" text="Voltar" />
+   </children>
+</AnchorPane>

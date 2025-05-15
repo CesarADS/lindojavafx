@@ -16,6 +16,22 @@ public class MenuController {
     }
 
     @FXML
+    protected void onCadastrarUsuario(ActionEvent event) {
+
+        try {
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/demofx/cadastro-usuario-view.fxml"));
+            Scene menuScene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(menuScene);
+
+        } catch (Exception e) {
+            mostrarMsg(e.getMessage());
+        }
+
+    }
+
+    @FXML
     protected void onVoltarLogin(ActionEvent event) {
 
         try {
@@ -31,6 +47,10 @@ public class MenuController {
         }
 
     }
+
+
+
+
 
     private void mostrarMsg(String mensagem) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);

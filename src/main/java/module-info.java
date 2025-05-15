@@ -10,7 +10,12 @@ module com.example.demofx {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.desktop;
+    requires jakarta.persistence;
+    requires org.hibernate.orm.core;
 
     opens com.example.demofx to javafx.fxml;
+    opens com.example.demofx.model to org.hibernate.orm.core;
+
     exports com.example.demofx;
 }

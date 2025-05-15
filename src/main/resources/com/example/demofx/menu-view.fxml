@@ -7,6 +7,6 @@
    <children>
       <Button fx:id="btnCadastrarProduto" layoutX="63.0" layoutY="55.0" mnemonicParsing="false" text="Cadastrar produto" />
       <Button fx:id="btnVoltar" layoutX="95.0" layoutY="165.0" mnemonicParsing="false" onAction="#onVoltarLogin" text="Voltar" />
-      <Button layoutX="65.0" layoutY="101.0" mnemonicParsing="false" text="Cadastrar usuário" />
+      <Button layoutX="65.0" layoutY="101.0" mnemonicParsing="false" onAction="#onCadastrarUsuario" text="Cadastrar usuário" />
    </children>
 </AnchorPane>
